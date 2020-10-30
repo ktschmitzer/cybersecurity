@@ -1,3 +1,11 @@
+# This python script uses BeautifulSoup to scrape an html table from the 
+# mitre website (https://cve.mitre.org/data/refs/refmap/source-EXPLOIT-DB.html') 
+# and write it to a csv file as well as a DynamoDB table. 
+# If you'd like to use this code to scrape an html table from a different website, 
+# simply replace the url with the appropriate one, revise the manipulation of the data, 
+# and write into the dataframe and DynamoDB table with the new column names.
+
+
 import urllib3
 import urllib.request
 from bs4 import BeautifulSoup
