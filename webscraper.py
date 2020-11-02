@@ -3,8 +3,7 @@
 # and write it to a csv file as well as a DynamoDB table. 
 # If you'd like to use this code to scrape an html table from a different website, 
 # simply replace the url with the appropriate one, revise the manipulation of the data, 
-# and write into the dataframe and DynamoDB table with the new column names.
-
+# and write into the dataframe and DynamoDB table with the new column names
 
 import urllib3
 import urllib.request
@@ -14,7 +13,6 @@ import csv
 import os
 import boto3
 import json
-
 
 dbTableName = os.environ['DB_TABLE_NAME']
 awsRegion = os.environ['AWS_REGION']
